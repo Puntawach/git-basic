@@ -4,10 +4,17 @@ import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { WorkspaceModule } from './workspace/workspace.module';
+import { BoardsModule } from './boards/boards.module';
 import { ColumnsModule } from './columns/columns.module';
 
 @Module({
-  imports: [AuthModule, UserModule, WorkspaceModule, ColumnsModule],
+  imports: [
+    AuthModule,
+    UserModule,
+    WorkspaceModule,
+    BoardsModule,
+    ColumnsModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
